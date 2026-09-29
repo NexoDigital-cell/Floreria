@@ -1,0 +1,649 @@
+:::writing{variant="standard" id="72641" title="style.css — Demo Florería Aurora"}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fffaf9;
+    color: #352b2e;
+}
+
+
+/* HEADER */
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
+
+    border-bottom: 1px solid #f0e2e5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo span {
+    font-size: 32px;
+}
+
+.logo h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+}
+
+.logo p {
+    font-size: 10px;
+    color: #a46a78;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #352b2e;
+    text-decoration: none;
+    font-size: 14px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #b66f82;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 26px;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 120px 8% 70px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,250,249,.96),
+            rgba(255,250,249,.60)
+        ),
+        url("https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 650px;
+
+    animation: aparecer 1s ease;
+}
+
+.small-title,
+.section-label {
+    letter-spacing: 3px;
+    font-size: 12px;
+    color: #a46a78;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(45px, 6vw, 78px);
+
+    line-height: 1.05;
+
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    display: block;
+    color: #a85f74;
+}
+
+.hero p {
+    max-width: 550px;
+
+    color: #66585c;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    text-decoration: none;
+
+    padding: 14px 26px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+    transition: .3s;
+}
+
+.primary {
+    background: #a85f74;
+    color: white;
+}
+
+.primary:hover {
+    transform: translateY(-3px);
+}
+
+.secondary {
+    border: 1px solid #a85f74;
+    color: #a85f74;
+}
+
+.secondary:hover {
+    background: #a85f74;
+    color: white;
+}
+
+
+/* ABOUT */
+
+.about {
+    padding: 110px 8%;
+
+    display: grid;
+
+    grid-template-columns: 1.3fr .7fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.about-text h2,
+.occasion h2,
+.instagram h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 50px;
+
+    line-height: 1.1;
+
+    margin: 20px 0;
+}
+
+.about-text p {
+    color: #6c6063;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+.about-card {
+    text-align: center;
+
+    padding: 60px 35px;
+
+    background: white;
+
+    border-radius: 30px;
+
+    box-shadow: 0 20px 60px rgba(120,70,80,.12);
+}
+
+.flower-icon {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.about-card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+}
+
+
+/* PRODUCTS */
+
+.products {
+    padding: 110px 8%;
+
+    background: #f9eff1;
+}
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+.section-title p {
+    letter-spacing: 3px;
+    font-size: 11px;
+    color: #a46a78;
+}
+
+.section-title h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 52px;
+
+    margin: 10px 0;
+}
+
+.section-title span {
+    color: #74666a;
+}
+
+
+.product-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.product {
+    background: white;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    transition: .3s;
+
+    box-shadow: 0 10px 30px rgba(100,60,70,.08);
+}
+
+.product:hover {
+    transform: translateY(-8px);
+}
+
+.product-image {
+    height: 260px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 100px;
+}
+
+.roses {
+    background: #f4dfe3;
+}
+
+.tulips {
+    background: #f7e8dc;
+}
+
+.bouquet {
+    background: #e8e1ee;
+}
+
+.product-info {
+    padding: 25px;
+}
+
+.product-info h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+}
+
+.product-info p {
+    color: #74666a;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin: 10px 0 15px;
+}
+
+.product-info strong {
+    display: block;
+
+    color: #a85f74;
+
+    font-size: 20px;
+
+    margin-bottom: 18px;
+}
+
+.product-info button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: #a85f74;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.product-info button:hover {
+    background: #86495b;
+}
+
+
+/* OCCASION */
+
+.occasion {
+    padding: 110px 8%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.occasion > div:first-child p:last-child {
+    color: #706366;
+
+    line-height: 1.8;
+}
+
+.occasion-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.occasion-grid div {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(100,60,70,.07);
+}
+
+.occasion-grid span {
+    font-size: 40px;
+}
+
+.occasion-grid h3 {
+    margin-top: 10px;
+
+    font-family: "Playfair Display", serif;
+}
+
+
+/* INSTAGRAM */
+
+.instagram {
+    padding: 120px 8%;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(76,40,48,.78),
+            rgba(76,40,48,.78)
+        ),
+        url("https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.instagram .section-label {
+    color: #f4ccd5;
+}
+
+.instagram h2 {
+    max-width: 650px;
+
+    margin: 20px auto;
+
+    font-size: 55px;
+}
+
+.instagram p {
+    max-width: 600px;
+
+    margin: auto auto 30px;
+
+    line-height: 1.8;
+
+    opacity: .9;
+}
+
+.instagram-btn {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    background: white;
+
+    color: #8c5063;
+
+    text-decoration: none;
+
+    transition: .3s;
+}
+
+.instagram-btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 35px 8%;
+
+    text-align: center;
+
+    background: #2e2427;
+
+    color: #d8cdd0;
+}
+
+.footer-logo {
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 12px;
+
+    margin-top: 5px;
+}
+
+
+/* FLOATING BUTTON */
+
+.floating-contact {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    background: #a85f74;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+
+    z-index: 999;
+
+    transition: .3s;
+}
+
+.floating-contact:hover {
+    transform: scale(1.1);
+}
+
+
+/* ANIMACIÓN */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+    nav {
+        display: none;
+
+        position: absolute;
+
+        top: 80px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 25px;
+
+        background: white;
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .about,
+    .occasion {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 90vh;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .about-text h2,
+    .occasion h2,
+    .instagram h2 {
+        font-size: 40px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+    .hero {
+        padding: 120px 6% 70px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .occasion-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+

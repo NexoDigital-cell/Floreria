@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Florería Aurora | Detalles que florecen</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        <span>🌷</span>
+        <div>
+            <h2>Florería Aurora</h2>
+            <p>Detalles que florecen</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#arreglos">Arreglos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+</header>
+
+
+<section class="hero" id="inicio">
+
+    <div class="hero-content">
+
+        <p class="small-title">FLORERÍA AURORA</p>
+
+        <h1>
+            Flores para hacer
+            <span>momentos inolvidables</span>
+        </h1>
+
+        <p>
+            Creamos arreglos florales especiales para cumpleaños,
+            aniversarios, celebraciones y momentos importantes.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#arreglos" class="btn primary">
+                Ver arreglos
+            </a>
+
+            <a href="https://instagram.com/" target="_blank" class="btn secondary">
+                Instagram
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="about" id="nosotros">
+
+    <div class="about-text">
+
+        <p class="section-label">SOBRE NOSOTROS</p>
+
+        <h2>
+            Un detalle puede
+            decirlo todo.
+        </h2>
+
+        <p>
+            En Florería Aurora nos encanta convertir flores en
+            recuerdos. Seleccionamos cada flor cuidadosamente
+            para crear arreglos llenos de color, elegancia y
+            personalidad.
+        </p>
+
+        <p>
+            Nuestro objetivo es ayudarte a encontrar el detalle
+            perfecto para cada ocasión.
+        </p>
+
+    </div>
+
+    <div class="about-card">
+
+        <div class="flower-icon">🌸</div>
+
+        <h3>Hecho con amor</h3>
+
+        <p>
+            Arreglos preparados cuidadosamente para
+            cada ocasión.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="products" id="arreglos">
+
+    <div class="section-title">
+
+        <p>ALGUNOS DE NUESTROS</p>
+
+        <h2>Arreglos florales</h2>
+
+        <span>
+            Elige el detalle perfecto para esa persona especial.
+        </span>
+
+    </div>
+
+
+    <div class="product-grid">
+
+        <article class="product">
+
+            <div class="product-image roses">
+                🌹
+            </div>
+
+            <div class="product-info">
+
+                <h3>Ramo Romántico</h3>
+
+                <p>
+                    Rosas frescas acompañadas de
+                    un elegante envoltorio.
+                </p>
+
+                <strong>$450 MXN</strong>
+
+                <button onclick="contactar('Ramo Romántico')">
+                    Pedir información
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <article class="product">
+
+            <div class="product-image tulips">
+                🌷
+            </div>
+
+            <div class="product-info">
+
+                <h3>Tulipanes Aurora</h3>
+
+                <p>
+                    Un arreglo delicado y colorido
+                    para sorprender.
+                </p>
+
+                <strong>$550 MXN</strong>
+
+                <button onclick="contactar('Tulipanes Aurora')">
+                    Pedir información
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <article class="product">
+
+            <div class="product-image bouquet">
+                💐
+            </div>
+
+            <div class="product-info">
+
+                <h3>Elegancia Floral</h3>
+
+                <p>
+                    Una combinación especial de
+                    flores seleccionadas.
+                </p>
+
+                <strong>$650 MXN</strong>
+
+                <button onclick="contactar('Elegancia Floral')">
+                    Pedir información
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="occasion">
+
+    <div>
+
+        <p class="section-label">PARA CADA MOMENTO</p>
+
+        <h2>
+            Hay una flor para
+            cada ocasión.
+        </h2>
+
+        <p>
+            Cumpleaños, aniversarios, graduaciones,
+            agradecimientos o simplemente porque sí.
+        </p>
+
+    </div>
+
+
+    <div class="occasion-grid">
+
+        <div>
+            <span>🎂</span>
+            <h3>Cumpleaños</h3>
+        </div>
+
+        <div>
+            <span>❤️</span>
+            <h3>Aniversarios</h3>
+        </div>
+
+        <div>
+            <span>🎓</span>
+            <h3>Graduaciones</h3>
+        </div>
+
+        <div>
+            <span>💐</span>
+            <h3>Detalles</h3>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="instagram" id="contacto">
+
+    <div>
+
+        <p class="section-label">SÍGUENOS</p>
+
+        <h2>
+            Descubre más flores
+            en Instagram.
+        </h2>
+
+        <p>
+            Mira nuestros nuevos arreglos, promociones
+            y trabajos recientes.
+        </p>
+
+        <a href="https://instagram.com/" target="_blank" class="instagram-btn">
+            📸 @floreriaaurora
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <div class="footer-logo">
+        🌷 <strong>Florería Aurora</strong>
+    </div>
+
+    <p>
+        © 2026 Florería Aurora · Todos los derechos reservados
+    </p>
+
+    <p>
+        Página creada por <strong>NexoDigital</strong>
+    </p>
+
+</footer>
+
+
+<div class="floating-contact" onclick="contactar('información general')">
+    💬
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
